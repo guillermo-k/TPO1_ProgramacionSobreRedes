@@ -1,0 +1,1 @@
+Para poder utilizar la aplicación, se debera ejecutar el archivo "dbControler.py" para crear la base de datos y la tabla que se usara(ejecutar solo la primera vez). Posteriormente, se debe ejecutar "server.py" y recien despues "cliente.py"
