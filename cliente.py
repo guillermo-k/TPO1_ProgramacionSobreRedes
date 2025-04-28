@@ -7,7 +7,7 @@ cliente.connect(("localhost",5000))
 
 # Creación y envío de mensajes al servidor
 while True:
-    mensaje = input("escriba su mensaje: ")
+    mensaje = input("Escriba su mensaje: ")
     cliente.send(mensaje.encode())
 
     # Condición de salida

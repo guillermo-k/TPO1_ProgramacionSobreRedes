@@ -1,7 +1,7 @@
 import sqlite3 as sql
 import datetime
 
-def guardarMensaje(contenido:str,fecha:datetime.date,ip_cliente:str):
+def guardarMensaje(contenido:str,fecha:datetime,ip_cliente:str):
     try:
         conn = sql.connect("TPO1.db")
     except:
@@ -37,8 +37,8 @@ def filtrarMensajePorIP(ip_cliente):
 
 if __name__=="__main__":
     conn = sql.connect("TPO1.db")
-    cursor = conn.cursor()
     conn.commit()
+    cursor = conn.cursor()
     cursor.execute(
         """CREATE TABLE chat(
         id INTEGER PRIMARY KEY AUTOINCREMENT,
